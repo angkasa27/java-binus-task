@@ -139,7 +139,7 @@ class DVD extends Item {
 public class App {
   static void setBorrower(Library library, String title, String borrower) {
     for (Item item : library.getItems()) {
-      if (item.getTitle().equals(title)) {
+      if (item.getTitle().toLowerCase().equals(title.toLowerCase())) {
         item.setBorrower(borrower);
       }
     }
