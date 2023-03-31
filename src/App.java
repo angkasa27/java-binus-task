@@ -1,9 +1,5 @@
 public class App {
-  public static void main(String[] args) {
-    try {
-      int[] arr = new int[Integer.MAX_VALUE];
-    } catch (OutOfMemoryError e) {
-      System.out.println("Caught an OutOfMemoryError");
-    }
+  public static void main(String[] args) throws Exception {
+    System.out.println("Hello, World!");
   }
 }
